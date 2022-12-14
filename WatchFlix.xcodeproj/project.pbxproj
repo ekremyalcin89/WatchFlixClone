@@ -17,6 +17,7 @@
 		E17057EE29485D3A0027E00F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17057ED29485D3A0027E00F /* SearchViewController.swift */; };
 		E17057F029485D6A0027E00F /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17057EF29485D6A0027E00F /* DownloadViewController.swift */; };
 		E17057F7294874920027E00F /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17057F6294874920027E00F /* CollectionViewTableViewCell.swift */; };
+		E17057F929489F770027E00F /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17057F829489F770027E00F /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E17057ED29485D3A0027E00F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E17057EF29485D6A0027E00F /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		E17057F6294874920027E00F /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		E17057F829489F770027E00F /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		E17057D3294797820027E00F /* WatchFlix */ = {
 			isa = PBXGroup;
 			children = (
+				E17057F3294874160027E00F /* Models */,
 				E17057F52948743B0027E00F /* Managers */,
 				E17057F4294874330027E00F /* Resources */,
 				E17057F2294874090027E00F /* ViewModels */,
@@ -94,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E17057F6294874920027E00F /* CollectionViewTableViewCell.swift */,
+				E17057F829489F770027E00F /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,7 +105,6 @@
 		E17057F2294874090027E00F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E17057F3294874160027E00F /* Models */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				E17057EE29485D3A0027E00F /* SearchViewController.swift in Sources */,
 				E17057D9294797820027E00F /* MainTabBarViewController.swift in Sources */,
 				E17057F7294874920027E00F /* CollectionViewTableViewCell.swift in Sources */,
+				E17057F929489F770027E00F /* HeroHeaderUIView.swift in Sources */,
 				E17057D5294797820027E00F /* AppDelegate.swift in Sources */,
 				E17057F029485D6A0027E00F /* DownloadViewController.swift in Sources */,
 				E17057D7294797820027E00F /* SceneDelegate.swift in Sources */,

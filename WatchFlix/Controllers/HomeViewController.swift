@@ -8,6 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    
+    
+    let sectionTitles: [String] = ["Trending Movies", "Popular", "Trending Series", "Upcoming Movies", "Top Rated"]
 
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -25,7 +29,26 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        configureNavbar()
+        
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        homeFeedTable.tableHeaderView = headerView
+    }
+    
+    
+    private func configureNavbar() {
+     //   var image = UIImage(named: "logo")
+      //  image = image?.withRenderingMode(.alwaysOriginal)
+     //   navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+        
+        navigationItem.rightBarButtonItems = [
+        
+            UIBarButtonItem(image: UIImage(systemName: "person.circle"), style: .done, target: self, action: nil),
+            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+        ]
+        
+        navigationController?.navigationBar.tintColor = .black
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -42,7 +65,7 @@ class HomeViewController: UIViewController {
         extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
  
             func numberOfSections(in tableView: UITableView) -> Int {
-                return 20
+                return sectionTitles.count
             }
             
             
@@ -66,8 +89,18 @@ class HomeViewController: UIViewController {
             func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
                 return 40
             }
+            
+            func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+                return sectionTitles[section]
+            }
                   
-                  
+                 
+            func scrollViewDidScroll(_ scrollView: UIScrollView) {
+                let defaultOffset = view.safeAreaInsets.top
+                let offset = scrollView.contentOffset.y + defaultOffset
+                
+                navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+            }
                   
                   
 }
