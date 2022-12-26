@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WatchFlix
 //
-//  Created by Tayyip on 12.12.2022.
+//  Created by Ekrem on 12.12.2022.
 //
 
 import UIKit

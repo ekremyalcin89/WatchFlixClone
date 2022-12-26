@@ -2,7 +2,7 @@
 //  CollectionViewTableViewCell.swift
 //  WatchFlix
 //
-//  Created by Tayyip on 13.12.2022.
+//  Created by Ekrem on 13.12.2022.
 //
 
 import UIKit
