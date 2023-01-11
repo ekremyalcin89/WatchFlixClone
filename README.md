@@ -11,14 +11,18 @@ You can watch the video below
 
 In the making  of this app i worked with , 
 
-TMDB API,
-Youtube Data API,
-Table Views,
-Scroll Views,
-Navigation Bar,
-Tab Bar,
-Search Bar,
-SDWeb Image SDK
+* MVVM Architecture
+* UIKit
+* TMDB API
+* Youtube Data API
+* Table Views
+* Scroll Views
+* Navigation Bar 
+* Tab Bar
+* Search Bar
+* SDWeb Image SDK
+
+
 
 Thank you !!!
 
