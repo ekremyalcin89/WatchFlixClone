@@ -2,7 +2,7 @@
 
 Hello !
 
-Watchflix is a  Fully loaded actual movie and tv series app . This is my hardest and longest app project.
+Watchflix is a  Fully functional movie and tv series app . This is my longest app project.
 
 With this app you can discover the  upcoming movies, popular movies  and  recent movies.
 With search bar you can  search the movie or series you like  and  watch  the trailer from youtube  and download .
